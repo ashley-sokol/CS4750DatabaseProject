@@ -11,16 +11,16 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "user_id")
     private long patientID;
-
-    @Column(name = "email")
-    private String email;
-
-    @Column(name = "password")
-    private String password;
-
-    @Column(name="date_joined")
-    @JsonFormat(shape= JsonFormat.Shape.STRING, pattern="dd-MM-yyyy", timezone = "UTC")
-    @Temporal(TemporalType.DATE)
-    private Date date_joined;
+//
+//    @Column(name = "email")
+//    private String email;
+//
+//    @Column(name = "password")
+//    private String password;
+//
+//    @Column(name="date_joined")
+//    @JsonFormat(shape= JsonFormat.Shape.STRING, pattern="dd-MM-yyyy", timezone = "UTC")
+//    @Temporal(TemporalType.DATE)
+//    private Date date_joined;
 
 }
