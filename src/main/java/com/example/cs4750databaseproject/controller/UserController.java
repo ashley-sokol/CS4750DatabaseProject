@@ -17,12 +17,10 @@ public class UserController {
     public ResponseEntity<User> createPatient(@RequestBody User user) {
            if (userrepository.findUserByEmail(user.getUserEmail()) != null)
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
-
-
-        // Save the user to the database
-        User createdUser = userrepository.save(user);
+           User createdUser = userrepository.save(user);
         return new ResponseEntity<>(createdUser, HttpStatus.CREATED);
     }
 
+    
 
 }
